@@ -20,16 +20,21 @@ const Rdrawer3 = () => {
         />
       </button>
       <Drawer anchor="right" open={open} onClose={handleClose}>
-        <div className="flex justify-between  p-5 text-2xl">
+        <div className="flex justify-between  p-5 lg:text-2xl md:text-lg text-sm">
           <span>Cart</span>
-          <Close onClick={handleClose} className="cursor-pointer" />
+          <Close
+            onClick={handleClose}
+            className="cursor-pointer"
+            onClose={handleClose}
+            sx={{ height: 18 }}
+          />
         </div>
         <Divider />
-        <p className="p-2 px-5 text-gray-400 text-lg">
+        <p className="p-2 px-5 text-gray-400 lg:text-lg md:text-lg text-xs">
           Spend .50 and get free shipping!
         </p>
         <Divider />
-        <div className="flex justify-center items-center py-56">
+        <div className="flex justify-center items-center py-56 lg:text-lg md:text-lg text-xs">
           Your card is empty
         </div>
       </Drawer>

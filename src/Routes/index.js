@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import Contact from "../Pages/Contact";
 import Rdrawer2 from "../Pages/Rdrawer/Rdrawer2";
 import Rdrawer3 from "../Pages/Rdrawer/rdrawer3";
+import Searchnav from "../Pages/Searchnav";
 import TrackOrder from "../Pages/TrackOrder";
 import IslamicProducts from "../Shared/Cards/IslamicClock/IslamicProducts";
 import MetalProducts from "../Shared/Cards/MetalArt/MetalProducts";
@@ -63,7 +64,7 @@ export const routes = [
     element: <Layout component={<Contact />} />,
   },
   {
-    id: 12,
+    id: 11,
     path: "/drawer2",
     element: <Layout component={<Rdrawer2 />} />,
   },
@@ -71,5 +72,10 @@ export const routes = [
     id: 12,
     path: "/drawer3",
     element: <Layout component={<Rdrawer3 />} />,
+  },
+  {
+    id: 13,
+    path: "/search",
+    element: <Layout component={<Searchnav />} />,
   },
 ];

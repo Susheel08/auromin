@@ -1,4 +1,4 @@
-import { Close, Search } from "@mui/icons-material";
+import { Close } from "@mui/icons-material";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import React, { useState } from "react";
@@ -7,6 +7,7 @@ import { Divider, Drawer } from "@mui/material";
 import Rdrawer2 from "../../Pages/Rdrawer/Rdrawer2";
 import Rdrawer1 from "../../Pages/Rdrawer/Rdrawer1";
 import Rdrawer3 from "../../Pages/Rdrawer/rdrawer3";
+import Searchnav from "../../Pages/Searchnav";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,6 +16,13 @@ const Header = () => {
   };
   const handleClose = () => {
     setOpen(false);
+  };
+  const [openPhone, setOpenPhone] = useState(false);
+  const handleOpen2 = () => {
+    setOpenPhone(true);
+  };
+  const handleClose2 = () => {
+    setOpenPhone(false);
   };
 
   return (
@@ -35,7 +43,7 @@ const Header = () => {
         />
         <div className="flex  gap-10 absolute right-16 top-12 font-medium">
           <Link to="/signup">Account</Link>
-          <Link to="/search">Search</Link>
+          <Searchnav />
           <span>
             <Rdrawer1 />
           </span>
@@ -120,8 +128,14 @@ const Header = () => {
             >
               Track Your Order
             </Link>
+            <Divider />
+            <span className="flex flex-col items-start gap-2 text-gray-400">
+              <Link to="/signup">Account</Link>
+              <Searchnav />
+            </span>
           </div>
         </Drawer>
+
         <img
           src="https://www.auromin.in/cdn/shop/files/qwe1_350x.png?v=1672398598"
           alt=""
@@ -130,60 +144,65 @@ const Header = () => {
           <Rdrawer2 />
         </span>
       </div>
+
       {/* mobile header  */}
       <div className=" flex lg:hidden md:hidden justify-between items-center px-2 py-2">
         <MenuOutlinedIcon
-          onClick={handleOpen}
+          onClick={handleOpen2}
           sx={{ height: 22, width: 40 }}
           style={{ color: "GrayText" }}
         />
-        <Drawer open={open} onClose={handleClose}>
+        <Drawer open={openPhone} onClose={handleClose2}>
           <div className="flex flex-col justify-center gap-5 py-8  px-5 font-medium">
-            <Close onClick={handleClose} />
+            <Close onClick={handleClose2} />
             <Link to="/home" className="hover:underline underline-offset-1">
               Home
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link to="/wooden" className="hover:underline underline-offset-1">
               Wooden Wall Clock
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link to="/metal" className="hover:underline underline-offset-1">
               Metal Wall Clock
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link to="/wooden" className="hover:underline underline-offset-1">
               Wall Art
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link to="/islamic" className="hover:underline underline-offset-1">
               Islamic Wall Decor
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <span className="hover:underline underline-offset-1">
               Designer Tables
             </span>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <span className="hover:underline underline-offset-1">Mirrors</span>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <span className="hover:underline underline-offset-1">
               Paintings
             </span>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link to="/contact" className="hover:underline underline-offset-1">
               Contacts
             </Link>
-            <Divider sx={{ width: 250 }} />
+            <Divider sx={{ width: 150 }} />
             <Link
               to="/trackorder"
               className="hover:underline underline-offset-1"
             >
               Track Your Order
             </Link>
+            <Divider />
+            <span className="text-gray-400">
+              <Searchnav />
+            </span>
           </div>
         </Drawer>
 
-        <Search />
+        {/* <Search /> */}
 
         <img
           src="https://www.auromin.in/cdn/shop/files/qwe1_350x.png?v=1672398598"

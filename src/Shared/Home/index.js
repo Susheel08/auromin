@@ -38,7 +38,6 @@ const Home = () => {
           View All Products
         </button>
       </div>
-      {/* card 2  */}
       <div className="grid lg:grid-cols-3  grid-cols-2 gap-6 lg:px-5 px-2">
         <div className="relative">
           <img
@@ -58,7 +57,7 @@ const Home = () => {
             View All Products
           </button>
         </div>
-        {/* c2  */}
+
         <div className="relative">
           <img
             src="https://img.freepik.com/premium-photo/friendly-interior-style-living-room-wall-mockup-wall-art-3d-rendering-3d-illustration-generative-ai_887552-4216.jpg?w=900"
@@ -77,7 +76,7 @@ const Home = () => {
             View All Products
           </button>
         </div>
-        {/* c3  */}
+
         <div className="relative">
           <img
             src="https://img.freepik.com/free-photo/front-view-interior-room-design-concept_23-2148786449.jpg?w=360&t=st=1695499832~exp=1695500432~hmac=ce6c2ff7c0ffea11515f729b89f00db22c5797c565c7fcb536580413ac89efff"
@@ -96,7 +95,7 @@ const Home = () => {
             View All Products
           </button>
         </div>
-        {/* c4  */}
+
         <div className="relative">
           <img
             src="https://img.freepik.com/premium-photo/poster-frame-mockup-scandinavian-style-living-room-interior_41470-4668.jpg?w=740"
@@ -116,7 +115,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      {/* 2  */}
+
       <p className="flex justify-center p-16 font-medium text-xl">
         Metal Wall Clock
       </p>
@@ -130,7 +129,7 @@ const Home = () => {
         </button>
       </div>
       <Divider />
-      {/* 3  */}
+
       <p className="flex justify-center p-16 font-medium text-xl">
         Wooden Wall Clock
       </p>
@@ -144,7 +143,7 @@ const Home = () => {
         </button>
       </div>
       <Divider />
-      {/* 4  */}
+
       <p className="flex justify-center p-16 font-medium text-xl">
         Islamic Wall Clock
       </p>
@@ -158,7 +157,7 @@ const Home = () => {
         </button>
       </div>
       <Divider />
-      {/* 5  */}
+
       <p className="flex justify-center p-16 font-medium text-xl">
         Designer Table
       </p>
