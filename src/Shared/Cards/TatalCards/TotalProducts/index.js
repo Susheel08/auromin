@@ -47,7 +47,7 @@ const TotalProducts = () => {
       <div className="px-5 py-10 ">
         <button
           onClick={() => setlimit(limit + 10)}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-3 p-2 font-bold text-white rounded"
+          className="buttonProducts px-12 py-3 text-xl rounded"
         >
           See More
         </button>

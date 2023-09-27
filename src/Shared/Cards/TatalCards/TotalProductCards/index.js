@@ -5,7 +5,7 @@ const TotalProductCards = ({ productData }) => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <>
       <div
         onClick={() =>
           navigate(
@@ -24,14 +24,14 @@ const TotalProductCards = ({ productData }) => {
             }
           )
         }
-        className="rounded-xl  "
+        className="rounded-xl lg:p-0 md:py-5 py-5 "
       >
         {/* cart */}
         <div className="flex flex-col  text-center">
           <img
             src={productData.thumbnail}
             alt=""
-            className="h-80 w-[500px] rounded-xl shadow-xl"
+            className="lg:h-80 lg:w-[500px] md:h-80 md:w-[400px] h-[190px] w-[200px] rounded-xl shadow-xl"
           />
           <span className="font-bold text-xl pt-5">{productData.title}</span>
           <div className="flex justify-center p-2 gap-2">
@@ -40,7 +40,7 @@ const TotalProductCards = ({ productData }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

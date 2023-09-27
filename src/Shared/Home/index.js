@@ -17,14 +17,16 @@ const Home = () => {
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
-        <button
-          onClick={() => navigate("/totalproducts")}
-          className="absolute top-[72%] right-[45%] bg-white lg:px-12 lg:py-4 px-2"
-          data-aos="zoom-in-up"
-          data-aos-duration="3000"
-        >
-          Buy Now
-        </button>
+        <span className="absolute top-[75%] right-[57%]">
+          <button
+            onClick={() => navigate("/totalproducts")}
+            className="button-86"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+          >
+            Buy Now
+          </button>
+        </span>
       </div>
       <p className="flex justify-center p-16 font-medium text-xl">
         Metal Wall Art
@@ -33,7 +35,7 @@ const Home = () => {
       <div className="flex justify-center text-white font-bold p-20">
         <button
           onClick={() => navigate("/totalproducts")}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-5 p-2"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           View All Products
         </button>
@@ -52,9 +54,10 @@ const Home = () => {
           </span>
           <button
             onClick={() => navigate("/totalproducts")}
-            className="absolute lg:top-[80%] lg:left-[30%] md:top-[80%] md:left-[30%] left-3 bottom-8 bg-white lg:px-5 lg:py-3 md:px-5 md:py-3 px-2 font-bold text-xs"
+            className="buttonView lg:px-5 md:px-10 px-2 py-2 absolute lg:top-[80%] lg:left-[30%]
+            md:top-[80%] md:left-[30%] top-[80%] left-[10%]"
           >
-            View All Products
+            View Products
           </button>
         </div>
 
@@ -71,9 +74,9 @@ const Home = () => {
           </span>
           <button
             onClick={() => navigate("/totalproducts")}
-            className="absolute lg:top-[80%] lg:left-[30%] md:top-[80%] md:left-[30%] left-3 bottom-8 bg-white lg:px-5 lg:py-3 md:px-5 md:py-3 px-2 font-bold text-xs"
+            className="buttonView lg:px-5 md:px-10 px-2 py-2 absolute lg:top-[80%] lg:left-[23%] md:top-[80%] md:left-[30%] top-[80%] left-[7%]"
           >
-            View All Products
+            View Products
           </button>
         </div>
 
@@ -90,9 +93,9 @@ const Home = () => {
           </span>
           <button
             onClick={() => navigate("/totalproducts")}
-            className="absolute lg:top-[80%] lg:left-[30%] md:top-[80%] md:left-[30%] left-3 bottom-8 bg-white lg:px-5 lg:py-3 md:px-5 md:py-3 px-2 font-bold text-xs"
+            className="buttonView lg:px-5 md:px-10 px-2 py-2 absolute lg:top-[80%] lg:left-[30%] md:top-[80%] md:left-[25%] top-[80%] left-[7%]"
           >
-            View All Products
+            View Products
           </button>
         </div>
 
@@ -109,9 +112,10 @@ const Home = () => {
           </span>
           <button
             onClick={() => navigate("/totalproducts")}
-            className="absolute lg:top-[80%] lg:left-[30%] md:top-[80%] md:left-[30%] left-7 bottom-8 bg-white lg:px-5 lg:py-3 md:px-5 md:py-3 px-2 font-bold text-xs "
+            className="buttonView lg:px-5 md:px-10 px-2 py-2 absolute lg:top-[80%] lg:left-[30%]
+            md:top-[80%] md:left-[30%] top-[80%] left-[15%]"
           >
-            View All Products
+            View Products
           </button>
         </div>
       </div>
@@ -123,7 +127,7 @@ const Home = () => {
       <div className="flex justify-center text-white font-bold p-20">
         <button
           onClick={() => navigate("/totalproducts")}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-5 p-2"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           View All Products
         </button>
@@ -137,7 +141,7 @@ const Home = () => {
       <div className="flex justify-center text-white font-bold p-20">
         <button
           onClick={() => navigate("/totalproducts")}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-5 p-2"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           View All Products
         </button>
@@ -151,7 +155,7 @@ const Home = () => {
       <div className="flex justify-center text-white font-bold p-20">
         <button
           onClick={() => navigate("/totalproducts")}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-5 p-2"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           View All Products
         </button>
@@ -165,7 +169,7 @@ const Home = () => {
       <div className="flex justify-center text-white font-bold p-20">
         <button
           onClick={() => navigate("/totalproducts")}
-          className="bg-[#e3753d] lg:px-20 lg:py-5 md:px-20 md:py-5 p-2"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           View All Products
         </button>
