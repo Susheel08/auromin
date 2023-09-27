@@ -35,7 +35,7 @@ const IslamicProducts = () => {
                 <span className=" flex justify-centers">
                   <Skeleton
                     animation="wave"
-                    sx={{ width: 300, bgcolor: "grey.600" }}
+                    sx={{ height: 200, width: 300, bgcolor: "grey.200" }}
                   />
                 </span>
               );

@@ -35,7 +35,7 @@ const WoodenProducts = () => {
                 <span className="p-4 flex justify-centers flex-col">
                   <Skeleton
                     animation="wave"
-                    sx={{ width: 300, bgcolor: "grey.600" }}
+                    sx={{ height: 200, width: 300, bgcolor: "grey.200" }}
                   />
                 </span>
               );

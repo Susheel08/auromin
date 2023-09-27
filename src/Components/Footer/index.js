@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="lg:px-20 lg:pt-[50px] lg:pb-10 md:pb-10 p-5 pt-2">
+      <p className="lg:px-20 md:px-20 lg:pt-[50px] lg:pb-10 md:pb-10 p-5 pt-2">
         <CopyrightIcon sx={{ fontSize: 13 }} />
         auromin.in
       </p>

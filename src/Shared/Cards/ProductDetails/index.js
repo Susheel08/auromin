@@ -27,14 +27,14 @@ const ProductDetails = () => {
 
   return (
     <div className="flex flex-col items-center lg:p-5 p-2 pt-5">
-      <div className="flex rounded-3xl lg:p-5 lg:gap-5 p-2 ">
+      <div className="lg:flex lg:flex-row md:flex  md:flex-row flex-col rounded-3xl lg:p-5 lg:gap-5 p-2 ">
         <div className="grid grid-cols-1 py-5">
           {detail?.images?.map((i) => {
             return (
               <img
                 src={i}
                 alt=""
-                className="lg:h-24 lg:w-24 md:h-20 md:w-20 h-20 w-56 rounded-3xl cursor-pointer"
+                className="lg:h-24 lg:w-24 md:h-20 md:w-16 h-56 w-96 rounded-3xl cursor-pointer"
                 onMouseOver={() => setImage(i)}
               />
             );
@@ -44,7 +44,7 @@ const ProductDetails = () => {
         <img
           src={image}
           alt=""
-          className="lg:h-[600px] lg:w-[700px]  md:h-[500px] md:w-96 rounded-2xl duration-1000"
+          className="lg:h-[600px] lg:w-[700px]  md:h-[400px] md:w-96 rounded-2xl duration-1000"
         />
         <div className="flex flex-col gap-4 w-64">
           <div>{state.description}</div>
