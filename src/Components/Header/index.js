@@ -8,6 +8,7 @@ import Rdrawer2 from "../../Pages/Rdrawer/Rdrawer2";
 import Rdrawer1 from "../../Pages/Rdrawer/Rdrawer1";
 import Rdrawer3 from "../../Pages/Rdrawer/rdrawer3";
 import Searchnav from "../../Pages/Searchnav";
+import SearchMobile from "../../Pages/SearchMobile";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -195,15 +196,9 @@ const Header = () => {
             >
               Track Your Order
             </Link>
-            <Divider />
-            <span className="text-gray-400">
-              <Searchnav />
-            </span>
           </div>
         </Drawer>
-
-        {/* <Search /> */}
-
+        <SearchMobile />
         <img
           src="https://www.auromin.in/cdn/shop/files/qwe1_350x.png?v=1672398598"
           alt=""

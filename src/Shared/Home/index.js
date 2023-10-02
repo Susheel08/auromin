@@ -17,16 +17,16 @@ const Home = () => {
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
-        <span className="absolute top-[75%] right-[57%]">
+        <p className="absolute lg:top-[75%] lg:right-[57%] md:top-[70%] md:right-[65%] top-[75%] right-[70%] ">
           <button
             onClick={() => navigate("/totalproducts")}
-            className="button-86"
+            className="button-86 lg:!px-10 lg:!py-4 md:!px-10 md:!py-4"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
             Buy Now
           </button>
-        </span>
+        </p>
       </div>
       <p className="flex justify-center p-16 font-medium text-xl">
         Metal Wall Art
@@ -49,7 +49,7 @@ const Home = () => {
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
-          <span className="absolute top-[70%] lg:left-[20%] md:left-[20%] left-[6px] font-bold lg:text-2xl md:text-2xl text-sm px-2">
+          <span className="absolute lg:top-[70%] md:top-[70%] top-[65%] lg:left-[20%] md:left-[20%] left-[6px] font-bold lg:text-2xl md:text-2xl text-sm px-2">
             Designer Metal Wall Clock
           </span>
           <button
