@@ -31,7 +31,7 @@ const TotalProductCards = ({ productData }) => {
           <img
             src={productData.thumbnail}
             alt=""
-            className="lg:h-80 lg:w-[500px] md:h-80 md:w-[400px] h-[190px] w-[200px] rounded-xl shadow-xl"
+            className="lg:h-80 lg:w-[400px] md:h-80 md:w-[400px] h-[190px] w-[200px] rounded-xl shadow-xl border-2"
           />
           <span className="font-bold text-xl pt-5">{productData.title}</span>
           <div className="flex justify-center p-2 gap-2">

@@ -27,7 +27,7 @@ const TotalProducts = () => {
 
   return (
     <>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 px-5">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 mx-10">
         {/* Skeleton  */}
         {isLoading
           ? [1, 2, 3, 4]?.map(() => {
@@ -44,10 +44,10 @@ const TotalProducts = () => {
               return <TotalProductCards key={item.id} productData={item} />;
             })}
       </div>
-      <div className="px-5 py-10 ">
+      <div className="mx-10 py-10 ">
         <button
           onClick={() => setlimit(limit + 10)}
-          className="buttonProducts px-12 py-3 text-xl rounded"
+          className="buttonProducts px-12 py-3 text-xl"
         >
           See More
         </button>

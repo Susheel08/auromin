@@ -13,14 +13,14 @@ const Home = () => {
         <img
           src="https://www.auromin.in/cdn/shop/files/loft-empty-room-with-wooden-panelling-authentic-interior-design_1000x.jpg?v=1677825686"
           alt=""
-          className="lg:h-full lg:w-full md:h-full md:w-full h-[300px]"
+          className="lg:h-full lg:w-full md:h-full md:w-full h-[300px] o"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
-        <p className="absolute lg:top-[75%] lg:right-[57%] md:top-[70%] md:right-[65%] top-[75%] right-[70%] ">
+        <p className="absolute lg:top-[75%] lg:right-[47%] md:top-[70%] md:right-[42%] top-[75%] right-[43%] ">
           <button
             onClick={() => navigate("/totalproducts")}
-            className="button-86 lg:!px-10 lg:!py-4 md:!px-10 md:!py-4"
+            className="button-1 lg:!px-10 lg:!py-4 md:!px-10 md:!py-4"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -40,12 +40,12 @@ const Home = () => {
           View All Products
         </button>
       </div>
-      <div className="grid lg:grid-cols-3  grid-cols-2 gap-6 lg:px-5 px-2">
+      <div className="grid lg:grid-cols-3  grid-cols-2 gap-6 lg:px-5 px-2 lg:mx-5 md:mx-5 mx-2">
         <div className="relative">
           <img
             src="https://img.freepik.com/premium-photo/book-shelf-table_36367-6290.jpg?w=360"
             alt=""
-            className="lg:h-[500px] lg:w-[470px] md:h-[500px] md:w-[470px] h-[300px] rounded-xl"
+            className="lg:h-[500px] lg:w-[470px] md:h-[400px] md:w-[470px] h-[250px] rounded-xl"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
@@ -65,7 +65,7 @@ const Home = () => {
           <img
             src="https://img.freepik.com/premium-photo/friendly-interior-style-living-room-wall-mockup-wall-art-3d-rendering-3d-illustration-generative-ai_887552-4216.jpg?w=900"
             alt=""
-            className="lg:h-[500px] lg:w-[470px] md:h-[500px] md:w-[470px] h-[300px] rounded-xl"
+            className="lg:h-[500px] lg:w-[470px] md:h-[400px] md:w-[470px] h-[250px] rounded-xl"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
@@ -84,7 +84,7 @@ const Home = () => {
           <img
             src="https://img.freepik.com/free-photo/front-view-interior-room-design-concept_23-2148786449.jpg?w=360&t=st=1695499832~exp=1695500432~hmac=ce6c2ff7c0ffea11515f729b89f00db22c5797c565c7fcb536580413ac89efff"
             alt=""
-            className="lg:h-[500px] lg:w-[470px] md:h-[500px] md:w-[470px] h-[300px] rounded-xl"
+            className="lg:h-[500px] lg:w-[470px] md:h-[400px] md:w-[470px] h-[250px] rounded-xl"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
@@ -103,7 +103,7 @@ const Home = () => {
           <img
             src="https://img.freepik.com/premium-photo/poster-frame-mockup-scandinavian-style-living-room-interior_41470-4668.jpg?w=740"
             alt=""
-            className="lg:h-[500px] lg:w-[470px] md:h-[500px] md:w-[470px] h-[300px] rounded-xl"
+            className="lg:h-[500px] lg:w-[470px] md:h-[400px] md:w-[470px] h-[250px] rounded-xl"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
@@ -176,9 +176,9 @@ const Home = () => {
       </div>
       <div className="relative">
         <img
-          src="https://img.freepik.com/free-photo/chic-modern-luxury-aesthetics-style-living-room-blue-tone_53876-125839.jpg?w=740&t=st=1695713723~exp=1695714323~hmac=20591dfa9d3272d727a6c68f9ed1f5a09b2fac51598e19bfe2324de95c5c1c87"
+          src="	https://www.auromin.in/cdn/shop/files/b_1500x.jpg?v=1645252367"
           alt=""
-          className="lg:h-[630px] lg:w-full md:h-[630px] md:w-full"
+          className="lg:h-[550px] object-cover lg:w-full md:h-[630px] md:w-full"
           data-aos="zoom-in-up"
           data-aos-duration="3000"
         />

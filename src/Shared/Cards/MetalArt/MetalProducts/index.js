@@ -27,7 +27,7 @@ const MetalProducts = () => {
 
   return (
     <>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:px-5 px-3">
+      <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-10 md::gap-10 gap-2 lg:px-5 lg:mx-10 md:mx-10 mx-5">
         {/* Skeleton  */}
         {isLoading
           ? [1, 2, 3, 4]?.map(() => {

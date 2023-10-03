@@ -31,7 +31,7 @@ const IslamicProductCards = ({ productData }) => {
           <img
             src={productData.thumbnail}
             alt=""
-            className="lg:h-80 lg:w-[500px] md:h-80 md:w-[500px] h-[190px] w-[200px] rounded-xl shadow-xl"
+            className="lg:h-80 lg:w-[400px] md:h-80 md:w-[500px] h-[190px] w-[200px] rounded-xl shadow-xl border-2"
           />
           <span className="font-bold lg:text-xl md:text-xl pt-5">
             {productData.title}

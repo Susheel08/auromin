@@ -30,7 +30,7 @@ const Header = () => {
     <>
       {/* computer header  */}
 
-      <div className=" flex justify-center lg:text-lg text-xs bg-[#e3753d] lg:p-4 md:p-3 p-2 px-4 font-medium text-white">
+      <div className=" flex justify-center lg:text-lg text-xs bg-[#e3753d] lg:p-3 md:p-3 px-4 font-medium text-white">
         <span>
           Get 15% OFF on purchase value above &#8377; 2999. Use Code AUROMIN15{" "}
         </span>
@@ -40,7 +40,7 @@ const Header = () => {
         <img
           src="	https://www.auromin.in/cdn/shop/files/qwe1_350x.png?v=1672398598"
           alt=""
-          className="w-[35%] h-[80px]"
+          className=""
         />
         <div className="flex  gap-10 absolute right-16 top-12 font-medium">
           <Link to="/signup">Account</Link>
