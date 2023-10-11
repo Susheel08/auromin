@@ -27,7 +27,7 @@ const MetalProductCards = ({ productData }) => {
         className="rounded-xl"
       >
         {/* cart */}
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col text-center duration-1000 hover:scale-110">
           <img
             src={productData.thumbnail}
             alt=""
@@ -37,8 +37,15 @@ const MetalProductCards = ({ productData }) => {
             {productData.title}
           </span>
           <div className="flex justify-center p-2 lg:gap-2 gap-1">
-            <p className="">&#8377;.{productData.price}</p>
-            <p>({productData.discountPercentage}%off)</p>
+            <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+              &#8377;.{productData.price}
+            </p>
+            <del className="text-gray-400 lg:text-lg md:text-lg text-sm font-medium">
+              &#8377;.1,999
+            </del>
+            <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+              ({productData.discountPercentage}%off)
+            </p>
           </div>
         </div>
       </div>

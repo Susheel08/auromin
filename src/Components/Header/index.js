@@ -66,11 +66,15 @@ const Header = () => {
         <Link to="/islamic" className="hover:underline underline-offset-1">
           Islamic Wall Decor
         </Link>
-        <span className="hover:underline underline-offset-1">
+        <Link to="/wooden" className="hover:underline underline-offset-1">
           Designer Tables
-        </span>
-        <span className="hover:underline underline-offset-1">Mirrors</span>
-        <span className="hover:underline underline-offset-1">Paintings</span>
+        </Link>
+        <Link to="/islamic" className="hover:underline underline-offset-1">
+          Mirrors
+        </Link>
+        <Link to="/wooden" className="hover:underline underline-offset-1">
+          Paintings
+        </Link>
         <Link to="/contact" className="hover:underline underline-offset-1">
           Contacts
         </Link>

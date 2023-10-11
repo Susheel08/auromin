@@ -27,18 +27,25 @@ const WoodenProductCards = ({ productData }) => {
         className="rounded-xl  "
       >
         {/* cart */}
-        <div className="flex flex-col  text-center">
+        <div className="flex flex-col  text-center duration-1000 hover:scale-110">
           <img
             src={productData.thumbnail}
             alt=""
-            className="lg:h-80 lg:w-[400px] md:h-80 md:w-[500px] h-[190px] w-[200px] rounded-xl shadow-xl border-2"
+            className="lg:h-80 lg:w-[400px] md:h-80 md:w-[500px] h-[190px] w-[300px] rounded-xl shadow-xl border-2"
           />
           <span className="font-bold lg:text-xl md:text-xl pt-5">
             {productData.title}
           </span>
           <div className="flex justify-center p-2 lg:gap-2 gap-1">
-            <p className="">&#8377;.{productData.price}</p>
-            <p>({productData.discountPercentage}%off)</p>
+            <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+              &#8377;.{productData.price}
+            </p>
+            <del className="text-gray-400 lg:text-lg md:text-lg text-sm font-medium">
+              &#8377;.2,599
+            </del>
+            <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+              ({productData.discountPercentage}%off)
+            </p>
           </div>
         </div>
       </div>
