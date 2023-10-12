@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import { Divider, Rating } from "@mui/material";
+import { Rating } from "@mui/material";
 
 const ProductDetails = () => {
   const { id, name } = useParams();
@@ -46,27 +46,43 @@ const ProductDetails = () => {
           />
         </div>
 
-        {/* <img
-          src={image}
-          alt=""
-          className="lg:h-[600px] lg:w-[700px]  md:h-[400px] md:w-96 rounded-2xl duration-1000"
-        /> */}
-        <div className="flex flex-col gap-4 w-64 pt-10">
-          <div>{state.description}</div>
-          <p>Model : {detail.title}</p>
-          <div>Brand:{state.brand}</div>
-          <div className="flex  gap-2">
-            <p>Price : ${state.price}</p>
-            <p>Discount:{state.discountPercentage}</p>
+        <div className="flex flex-col gap-4 lg:w-[40%] md:w-[40%] w-full pt-20">
+          <p className="">auromin.in</p>
+          <div className="flex justify-start gap-10 ">
+            <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+              &#8377;.{state.price}
+            </p>
+            <div className="flex">
+              <del className="text-gray-400 lg:text-lg md:text-lg text-sm font-medium">
+                &#8377;.2,999
+              </del>
+              <p className="text-[#e3753d] lg:text-lg md:text-lg text-sm font-medium">
+                ({state.discountPercentage}%off)
+              </p>
+            </div>
           </div>
-          <p>Category : {state.category}</p>
-          <div>Stock:{state.stock}</div>
-          <div className="flex items-center">
-            <Rating readOnly value={detail.rating || ""} />
-            Rating:{state.rating}
+          <div className="border border-[#bdb8ac] border-dashed rounded flex flex-col">
+            <div className="border-b border-[#bdb8ac] p-3">
+              {state.description}
+            </div>
+            <p className="border-b border-[#bdb8ac] p-3">
+              Model : {detail.title}
+            </p>
+            <div className="border-b border-[#bdb8ac] p-3">
+              Brand: {state.brand}
+            </div>
+            <p className="border-b border-[#bdb8ac] p-3">
+              Category : {state.category}
+            </p>
+            <div className="border-b border-[#bdb8ac] p-3">
+              Stock: {state.stock}
+            </div>
+            <div className="flex items-center p-3 gap-3">
+              <Rating readOnly value={detail.rating || ""} />
+              <span>Rating: {state.rating}</span>
+            </div>
           </div>
-
-          <button className="border-2 border-black rounded-xl  w-52 p-1">
+          <button className="buttonProducts lg:px-5 md:px-10 px-2 py-2 w-auto">
             Buy Now
           </button>
         </div>

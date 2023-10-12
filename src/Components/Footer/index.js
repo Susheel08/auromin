@@ -3,6 +3,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
       <div className="lg:flex lg:flex-row flex-col gap-96 lg:p-20 md:p-20 p-5 text-lg">
         <div className="flex flex-col gap-2">
           <span>Footer Menu</span>
-          <span>Shipping Policy</span>
-          <span>Refund Policy</span>
-          <span>Privacy Policy</span>
-          <span>Terms of Services</span>
-          <span>About us</span>
-          <span>Contact us</span>
+          <Link to="/shipping-policy">Shipping Policy</Link>
+          <Link to="/refund-policy">Refund Policy</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms-of-services">Terms of Services</Link>
+          <a href="/home">About us</a>
+          <Link to="/contact">Contact us</Link>
         </div>
         <div className="flex flex-col gap-5">
           <span>NEED HELP?</span>
@@ -24,14 +25,24 @@ const Footer = () => {
           <span>Operating Hours : 10:00 AM to 6:00 PM</span>
           <span>Closed on Sunday</span>
           <div className="flex items-center gap-7">
-            <FacebookOutlinedIcon />
-            <InstagramIcon />
-            <img
-              src="https://www.freeiconspng.com/thumbs/pinterest-logo-icon/white-pinterest-logo-on-black-16.png"
-              alt=""
-              className="h-5 w-5"
-            />
-            <SmartDisplayIcon />
+            <a href="https://facebook.com/">
+              <FacebookOutlinedIcon />
+            </a>
+            <a href="https://www.instagram.com/">
+              <InstagramIcon />
+            </a>
+            <a href="https://in.pinterest.com/">
+              {" "}
+              <img
+                src="https://www.freeiconspng.com/thumbs/pinterest-logo-icon/white-pinterest-logo-on-black-16.png"
+                alt=""
+                className="h-5 w-5"
+              />
+            </a>
+            <a href="https://www.youtube.com/@Auromin/featured">
+              {" "}
+              <SmartDisplayIcon />
+            </a>
           </div>
         </div>
       </div>

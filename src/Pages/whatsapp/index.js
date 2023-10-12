@@ -52,7 +52,7 @@ const Whatsapp = () => {
         </div>
         <Divider />
         <div className="flex lg:justify-between md:justify-between items-center px-7 h-20">
-          <input type="search" placeholder="Send a message...." />
+          <input type="text" placeholder="Send a message...." />
           <div className="flex gap-5">
             <InsertEmoticonIcon />
             <SendIcon />

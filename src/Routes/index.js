@@ -1,9 +1,13 @@
 import Signup from "../Authentication/Signup";
 import Layout from "../Layout";
 import Contact from "../Pages/Contact";
+import Privacy from "../Pages/Privacy-Policy";
 import Rdrawer2 from "../Pages/Rdrawer/Rdrawer2";
 import Rdrawer3 from "../Pages/Rdrawer/rdrawer3";
+import Refund from "../Pages/Refund-Policy";
 import Searchnav from "../Pages/Searchnav";
+import Shipping from "../Pages/Shipping-Policy";
+import Terms from "../Pages/Terms-Of-Services";
 import TrackOrder from "../Pages/TrackOrder";
 import IslamicProducts from "../Shared/Cards/IslamicClock/IslamicProducts";
 import MetalProducts from "../Shared/Cards/MetalArt/MetalProducts";
@@ -77,5 +81,25 @@ export const routes = [
     id: 13,
     path: "/search",
     element: <Layout component={<Searchnav />} />,
+  },
+  {
+    id: 14,
+    path: "/shipping-policy",
+    element: <Layout component={<Shipping />} />,
+  },
+  {
+    id: 15,
+    path: "/refund-policy",
+    element: <Layout component={<Refund />} />,
+  },
+  {
+    id: 16,
+    path: "/privacy-policy",
+    element: <Layout component={<Privacy />} />,
+  },
+  {
+    id: 17,
+    path: "/terms-of-services",
+    element: <Layout component={<Terms />} />,
   },
 ];

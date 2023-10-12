@@ -1,13 +1,6 @@
-import {
-  Close,
-  Facebook,
-  FacebookRounded,
-  FacebookSharp,
-  Twitter,
-  WhatsApp,
-} from "@mui/icons-material";
+import { Close, Twitter, WhatsApp } from "@mui/icons-material";
 import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
-import { Drawer, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import React, { useState } from "react";
 
 const ShareButton = () => {
@@ -40,13 +33,19 @@ const ShareButton = () => {
             <p className="text-[50px]">auromin.in</p>
             <div className="flex justify-between gap-7 text-white font-bold">
               <span className="bg-blue-700 rounded-full p-5">
-                <FacebookOutlined sx={{ height: 30, width: 30 }} />
+                <a href="https://facebook.com/">
+                  <FacebookOutlined sx={{ height: 30, width: 30 }} />
+                </a>
               </span>
               <span className="bg-blue-500 rounded-full p-5">
-                <Twitter sx={{ height: 30, width: 30 }} />
+                <a href="https://twitter.com/">
+                  <Twitter sx={{ height: 30, width: 30 }} />
+                </a>
               </span>
               <span className="bg-green-500 rounded-full p-5">
-                <WhatsApp sx={{ height: 30, width: 30 }} />
+                <a href="https://web.whatsapp.com/">
+                  <WhatsApp sx={{ height: 30, width: 30 }} />
+                </a>
               </span>
             </div>
           </div>
